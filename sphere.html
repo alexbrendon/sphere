@@ -1,0 +1,43 @@
+<!doctype html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="_ui/css/reset.css">
+  <link rel="stylesheet" href="_ui/css/sphere.css">
+  <script src="_ui/js/libs/jquery.js"></script>
+  <script src="_ui/js/libs/easing.js"></script>
+  <script src="_ui/js/sphere.js"></script>
+</head>
+
+<body id="sphere">
+    <div class="container">
+      <div id="carousel"></div>
+      <div id="controls">
+        <!--
+        <label>Add Rings</label>
+        <input type="range" value="0" min="0" max="30" id="rings" />
+        -->
+
+        <label>Size</label>
+        <input type="range" step="2" value="30" min="10" max="100" id="panels" />
+
+        <label>Left</label>
+        <input type="range" step="5" value="0" min="0" max="1000" id="left" />
+
+        <label>Top</label>
+        <input type="range" step="5" value="0" min="0" max="1000" id="top" />
+
+        <label>RotationY</label>
+        <input type="range" step=".5" value="3" min="0" max="10" id="rotationy" />
+
+        <label>RotationX</label>
+        <input type="range" step=".5" value="2" min="0" max="10" id="rotationx" />
+
+        <label>Border Radius</label>
+        <input type="range" step="1" value="0" min="0" max="100" id="radius" />
+
+        <label>Depth</label>
+        <input type="range" step="100" value="1000" min="50" max="1000" id="perspective" />
+      </div>
+    </div>
+</body>
+</html>

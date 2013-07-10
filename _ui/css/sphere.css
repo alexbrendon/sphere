@@ -1,0 +1,64 @@
+
+
+#sphere {
+	background:#326598;
+}
+
+	.container {
+		margin:200px auto;
+		position:relative;
+		-webkit-perspective: 1000;
+		width:900px;
+	}
+
+		#controls {
+			position:relative;
+			z-index:2;
+		}
+
+			#controls label {
+				color:#fff;
+				display:block;
+			}
+
+			#controls input[type="number"] {
+				width:50px;
+				display:block;
+				margin-bottom:10px;
+			}
+
+		#carousel {		
+			width:800px;
+			height:400px;
+			margin:0 auto;
+			position:absolute;
+			-webkit-transform-style: preserve-3d;
+			-webkit-transform-origin:50% 0;
+			left:0;
+			top:0;
+			z-index:1;
+		}
+
+		#carousel figure {
+			display:block;
+			position:absolute;
+			-webkit-backface-visibility:visible;
+			opacity:0.5;
+		}
+
+			#carousel ul {
+				position:absolute;
+				top:0;
+				left:0;
+				-webkit-transform-style: preserve-3d;
+			}
+
+				#carousel ul .sphere {
+					background:transparent;
+					border:1px solid #fff;
+					list-style:none;
+					position:absolute;
+					opacity:.3;
+					/*display:none;*/
+					/*-webkit-transition:all .2s;*/
+				}
